@@ -1,8 +1,9 @@
 // process/default_form_process.php
+
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('location: ../index.php'); // redirige quand le code est terminé VS instantanément, il faudra mettre un return après header
+    header('location: ../index.php');
 }
 
 if (
@@ -14,7 +15,9 @@ if (
         $_POST['password']
     )
 ) {
-    header('location: ../index.php?error=1');
+    header('location: ../index.php?error=1'); 
+    // redirige quand le code est terminé VS instantanément, il faudra mettre un return après header
+    return;
 }
 
 if (
@@ -25,8 +28,10 @@ if (
     empty($_POST['password'])
 ) {
     header('location: ../index.php?error=2');
+    return;
 }
 
+// input sanitization
 $firstName = htmlspecialchars(trim($_POST['firstName']));
 $lastName = htmlspecialchars(trim($_POST['lastName']));
 $age = htmlspecialchars(trim($_POST['age']));
