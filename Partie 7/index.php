@@ -59,6 +59,7 @@
         echo "Prénom : " . $_POST['firstName'] . "<br>";
         echo "Nom : " . $_POST['lastName'] . "<br>";
 
+
         if (str_ends_with($_POST['file'], '.pdf')) {
             echo "Fichier : " . $_POST['file'] . "<br>";
         }
