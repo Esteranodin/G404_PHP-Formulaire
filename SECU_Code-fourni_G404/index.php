@@ -7,7 +7,6 @@ if (isset($_GET['error'])) {
     $error = false;
 }
 
-
 ?>
 
 <!DOCTYPE html>

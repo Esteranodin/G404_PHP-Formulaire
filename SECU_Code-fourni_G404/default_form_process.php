@@ -49,7 +49,6 @@ if(
     // redirection si c'est pas bon
 }
 
-
 // optionnel regex
 // if (!preg_match('[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]', $email)) {
 //     die("l'email est pas conforme");
@@ -58,8 +57,6 @@ if(
 // etc .......
 
 
-
 // mon code une fois que toute les données sont bonnes
-
 
 header('location: ../compte_creer.php?firstName=' . $firstName . '&lastName=' . $lastName);
