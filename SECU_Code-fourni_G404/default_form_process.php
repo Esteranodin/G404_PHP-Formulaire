@@ -2,7 +2,7 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('location: ../index.php');
+    header('location: ../index.php'); // redirige quand le code est terminé VS instantanément, il faudra mettre un return après header
 }
 
 if (
