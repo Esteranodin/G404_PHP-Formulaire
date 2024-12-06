@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<form action="exo3.php" method="post">
+<form action="" method="post">
 
 <label for="login"> Votre login :</label>
 <input type="text" name="login">
@@ -25,8 +25,9 @@ if (isset($_POST["login"], $_POST["mdp"])) {
     $mdp = $_POST["mdp"];
     setcookie("login", $login);
     setcookie("mdp", $mdp);
+    header('location: ./exo1.php');
     
-    echo  "<p> login :" . $_COOKIE["login"] . "<br> mdp :" . $_COOKIE["mdp"] . "</p>" ; 
+    // echo  "<p> login :" . $_COOKIE["login"] . "<br> mdp :" . $_COOKIE["mdp"] . "</p>" ; 
 }
 
 ?>

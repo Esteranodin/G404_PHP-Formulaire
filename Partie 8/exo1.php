@@ -52,6 +52,11 @@
         <p>Utilisateur : <span><?php echo $_SERVER["HTTP_USER_AGENT"]; ?></span></p>
         <p>Adresse IP du serveur : <span><?php echo $_SERVER['SERVER_ADDR']; ?></span></p>
         <p>Nom du serveur : <span><?php echo $_SERVER['SERVER_NAME']; ?></span></p>
+
+        <!-- affichage exo 3 -->
+        <p>Cookies login : <span> <?php echo $_COOKIE["login"]; ?></span></p>
+        <p>Cookies mdp : <span> <?php echo $_COOKIE["mdp"]; ?></span></p>
     </div>
+
 </body>
 </html>
