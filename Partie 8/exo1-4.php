@@ -53,10 +53,12 @@
         <p>Adresse IP du serveur : <span><?php echo $_SERVER['SERVER_ADDR']; ?></span></p>
         <p>Nom du serveur : <span><?php echo $_SERVER['SERVER_NAME']; ?></span></p>
 
-        <!-- affichage exo 3 -->
+        <!-- exo 4 = affichage exo 3 -->
         <p>Cookies login : <span> <?php echo $_COOKIE["login"]; ?></span></p>
         <p>Cookies mdp : <span> <?php echo $_COOKIE["mdp"]; ?></span></p>
+        <p><a href="./exo5.php"> Modifier les cookies pour exo 5</a></p>
     </div>
 
+        
 </body>
 </html>

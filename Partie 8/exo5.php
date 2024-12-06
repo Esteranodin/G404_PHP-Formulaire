@@ -25,9 +25,7 @@ if (isset($_POST["login"], $_POST["mdp"])) {
     $mdp = $_POST["mdp"];
     setcookie("login", $login);
     setcookie("mdp", $mdp);
-    header('location: ./exo1-4.php');
-    
-  
+    header('location: ./exo1-4.php'); 
 }
 
 ?>
