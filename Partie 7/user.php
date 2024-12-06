@@ -5,3 +5,4 @@ if (isset($_POST['firstName']) && isset($_POST['lastName'])) {
         echo "Nom : " . $_POST['lastName'] . "<br>" ;
 }
 ?>
+
