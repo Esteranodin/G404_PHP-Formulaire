@@ -4,6 +4,8 @@
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('location: ../index.php');
+    // redirige quand le code est terminé VS instantanément, il faudra mettre un return après header
+    return;
 }
 
 if (
@@ -16,7 +18,6 @@ if (
     )
 ) {
     header('location: ../index.php?error=1'); 
-    // redirige quand le code est terminé VS instantanément, il faudra mettre un return après header
     return;
 }
 
