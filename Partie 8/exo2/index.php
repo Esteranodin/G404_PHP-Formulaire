@@ -41,16 +41,11 @@ a {
 a:hover {
     background-color: #f0f0f0; 
     transform: translateY(-2px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
 }
+
 </style>
-
-
 <body>
-    <a href="compte.php"> Cliquez ! 
-<?php
-
-?>
-    </a>
+    <a href="./compte.php"> Cliquez ! </a>
 </body>
 </html>
